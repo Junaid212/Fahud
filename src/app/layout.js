@@ -11,15 +11,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* CSS Assets */}
-        <link rel="stylesheet" href="/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="/css/magnific-popup.min.css" />
-        <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/bootstrap-icons.css" />
-        <link rel="stylesheet" href="/css/lc_lightbox.css" />
-        <link rel="stylesheet" href="/css/bootstrap-slider.min.css" />
+        <link rel="stylesheet" href={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/css/bootstrap.min.css`} />
+        <link rel="stylesheet" href={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/css/font-awesome.min.css`} />
+        <link rel="stylesheet" href={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/css/owl.carousel.min.css`} />
+        <link rel="stylesheet" href={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/css/magnific-popup.min.css`} />
+        <link rel="stylesheet" href={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/css/swiper-bundle.min.css`} />
+        <link rel="stylesheet" href={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/css/style.css`} />
+        <link rel="stylesheet" href={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/css/bootstrap-icons.css`} />
+        <link rel="stylesheet" href={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/css/lc_lightbox.css`} />
+        <link rel="stylesheet" href={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/css/bootstrap-slider.min.css`} />
 
         {/* Fonts */}
         <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
