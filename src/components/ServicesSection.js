@@ -31,7 +31,7 @@ export default function ServicesSection() {
                   <div className="wt-icon-box-wraper">
                     <div className="icon-lg">
                       <span className="icon-cell site-text-primary">
-                        <img src="/images/icons/furniture-2.png" alt="Image" />
+                        <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/icons/furniture-2.png`} alt="Image" />
                       </span>
                     </div>
                   </div>
@@ -53,7 +53,7 @@ export default function ServicesSection() {
                   <div className="wt-icon-box-wraper">
                     <div className="icon-lg">
                       <span className="icon-cell site-text-primary">
-                        <img src="/images/icons/window.png" alt="Image" />
+                        <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/icons/window.png`} alt="Image" />
                       </span>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ export default function ServicesSection() {
                   <div className="wt-icon-box-wraper">
                     <div className="icon-lg">
                       <span className="icon-cell site-text-primary">
-                        <img src="/images/icons/candles.png" alt="Image" />
+                        <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/icons/candles.png`} alt="Image" />
                       </span>
                     </div>
                   </div>
@@ -97,7 +97,7 @@ export default function ServicesSection() {
                   <div className="wt-icon-box-wraper">
                     <div className="icon-lg">
                       <span className="icon-cell site-text-primary">
-                        <img src="/images/icons/curtain.png" alt="Image" />
+                        <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/icons/curtain.png`} alt="Image" />
                       </span>
                     </div>
                   </div>
@@ -119,7 +119,7 @@ export default function ServicesSection() {
                   <div className="wt-icon-box-wraper">
                     <div className="icon-lg">
                       <span className="icon-cell site-text-primary">
-                        <img src="/images/icons/key.png" alt="Image" />
+                        <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/icons/key.png`} alt="Image" />
                       </span>
                     </div>
                   </div>

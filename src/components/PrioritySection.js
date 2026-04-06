@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function PrioritySection() {
   return (
-    <div className="section-full p-t120 p-b90 twm-ab2-section-wrap" style={{ backgroundImage: 'url(/images/background/ab-bg2.jpg)' }}>
+    <div className="section-full p-t120 p-b90 twm-ab2-section-wrap" style={{ backgroundImage: 'url(${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/background/ab-bg2.jpg)' }}>
       <div className="container">
         <div className="section-content">
           <div className="row">
@@ -29,7 +29,7 @@ export default function PrioritySection() {
                     <span>Architect</span>
                   </div>
                   <div className="twm-ab2-au-sign">
-                    <img src="/images/sign-pic.png" alt="Image" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/sign-pic.png`} alt="Image" />
                   </div>
                 </div>
               </div>

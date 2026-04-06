@@ -24,7 +24,7 @@ export default function TeamSection() {
               <div className="col-xl-4 col-lg-4 col-md-6 m-b30">
                 <div className="team-effect-hvr2">
                   <div className="team-hvr2-media">
-                    <img src="/images/team/pic2.jpg" alt="" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/team/pic2.jpg`} alt="" />
                   </div>
                   
                   <div className="content-info">
@@ -48,7 +48,7 @@ export default function TeamSection() {
               <div className="col-xl-4 col-lg-4 col-md-6 m-b30">
                 <div className="team-effect-hvr2">
                   <div className="team-hvr2-media">
-                    <img src="/images/team/pic3.jpg" alt="" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/team/pic3.jpg`} alt="" />
                   </div>
                   
                   <div className="content-info">
@@ -72,7 +72,7 @@ export default function TeamSection() {
               <div className="col-xl-4 col-lg-4 col-md-6 m-b30">
                 <div className="team-effect-hvr2">
                   <div className="team-hvr2-media">
-                    <img src="/images/team/pic4.jpg" alt="" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/team/pic4.jpg`} alt="" />
                   </div>
                   
                   <div className="content-info">

@@ -12,7 +12,7 @@ export default function Header() {
             <div className="logo-header">
               <div className="logo-header-inner logo-header-one">
                 <Link href="/">
-                  <Image src="/images/fd.png" alt="FAHUD Safety & Technical Trading" width={180} height={74} priority />
+                  <Image src="./images/fd.png" alt="FAHUD Safety & Technical Trading" width={180} height={74} priority />
                 </Link>
               </div>
             </div>

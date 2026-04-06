@@ -19,13 +19,13 @@ export default function HeroSlider() {
       <div className="swiper twm-slider1">
         <div className="swiper-wrapper twm-slider1-slides">
           <div className="swiper-slide">
-            <img src="/images/main-slider/slider1/pic1.png" alt="" />
+            <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/main-slider/slider1/pic1.png`} alt="" />
           </div>
           <div className="swiper-slide">
-            <img src="/images/main-slider/slider1/pic2.png" alt="" />
+            <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/main-slider/slider1/pic2.png`} alt="" />
           </div>
           <div className="swiper-slide">
-            <img src="/images/main-slider/slider1/pic3.png" alt="" />
+            <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/main-slider/slider1/pic3.png`} alt="" />
           </div>
         </div>
         <div className="controls-area">
@@ -87,7 +87,7 @@ export default function HeroSlider() {
         </div>
         <div className="swiper-pagination"></div>
         <div className="slider-circle-pic">
-          <img src="/images/main-slider/slider1/circle1.png" alt="" />
+          <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/main-slider/slider1/circle1.png`} alt="" />
         </div>
       </div>
     </div>

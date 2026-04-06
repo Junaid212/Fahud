@@ -109,7 +109,7 @@ export default function About1() {
                     <div className="col-lg-7 col-md-12 m-b30 company-exp-position">
                       <div className="company-exp">
                         <div className="company-exp-media">
-                          <img src="/images/fd1.png" alt="FAHUD Safety Products" style={{ width: '100%', objectFit: 'cover', borderRadius: '4px' }} />
+                          <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/fd1.png`} alt="FAHUD Safety Products" style={{ width: '100%', objectFit: 'cover', borderRadius: '4px' }} />
                         </div>
                         <div className="company-exp-tagline">
                           <span>We take pride in maintaining ethical business practices and delivering products that meet international safety standards.</span>
@@ -118,7 +118,7 @@ export default function About1() {
                         {/* <div className="circle-text1">
                           <div className="emblem-wrap">
                             <div className="emblem">Safety-Technical-Trading-Oman-</div>
-                            <i><img src="/images/in-circle-bx.png" alt="FAHUD" /></i>
+                            <i><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/in-circle-bx.png`} alt="FAHUD" /></i>
                           </div>
                         </div> */}
                       </div>
@@ -195,7 +195,7 @@ export default function About1() {
 
           {/* ── TESTIMONIALS SECTION ── */}
           {/* <div className="section-full testimonial2-outer-wrap p-t120 p-b90 parallax-section">
-            <div className="parallax-image" style={{ backgroundImage: 'url(/images/background/testimonial-bg.jpg)' }}></div>
+            <div className="parallax-image" style={{ backgroundImage: 'url(${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/background/testimonial-bg.jpg)' }}></div>
             <div className="container">
               <div className="testimonial2-outer">
                 <div className="section-head center wt-small-separator-outer when-bg-dark">

@@ -14,7 +14,7 @@ export default function VideoSection() {
             <div className="col-lg-6 col-md-12">
               <div className="video-section2-outer">
                 <div className="video-section2 parallax-section">
-                  <img src="/images/fd1.png" alt="" className="parallax-image" />
+                  <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/fd1.png`} alt="" className="parallax-image" />
                   {/* <a href="https://player.vimeo.com/video/845982181?color=ffffff&title=0&byline=0&portrait=0" className="mfp-video play-now-video">
                     <i className="icon fa fa-play"></i>
                     <span className="ripple"></span>

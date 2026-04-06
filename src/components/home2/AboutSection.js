@@ -10,11 +10,11 @@ export default function AboutSection() {
               <div className="col-lg-7 col-md-12 m-b30 about-max-two-position">
                 <div className="about-max-two">
                   <div className="about-max-two-media">
-                    <img src="/images/about/l-pic.jpg" alt="" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/about/l-pic.jpg`} alt="" />
                   </div>
                   <div className="about-max-two-media2-wrap">
                     <div className="about-max-two-media2">
-                      <img src="/images/about/s-pic.jpg" alt="" />
+                      <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/about/s-pic.jpg`} alt="" />
                     </div>
                   </div>
                 </div>

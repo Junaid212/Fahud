@@ -55,7 +55,7 @@ export default function BlogSection() {
                 <div className="col-lg-6 col-md-12 m-b30">
                   <div className="blog-post blog-post-4-outer">
                     <div className="wt-post-media">
-                      <a href="/blog-single"><img src="/images/blog/latest/bg1.jpg" alt="Image" /></a>
+                      <a href="/blog-single"><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/blog/latest/bg1.jpg`} alt="Image" /></a>
                       <div className="post-date"><span>14</span> April 2025</div>
                     </div>
                     <div className="wt-post-info">
@@ -65,7 +65,7 @@ export default function BlogSection() {
                       </div>
                       <div className="wt-post-meta">
                         <ul>
-                          <li className="post-author"><img src="/images/blog/blog-author/pic3.jpg" alt="Image" /><span>Devid</span></li>
+                          <li className="post-author"><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/blog/blog-author/pic3.jpg`} alt="Image" /><span>Devid</span></li>
                           <li className="post-comment"><i className="bi bi-chat-left"></i> 24</li>
                           <li className="post-time"><i className="bi bi-clock"></i> 14 Days</li>
                         </ul>

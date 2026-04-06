@@ -23,7 +23,7 @@ export default function NewsSection() {
                 <div className="col-lg-4 col-md-6 m-b30">
                   <div className="blog-post blog-post-5-outer">
                     <div className="wt-post-media">
-                      <Link href="/blog-single"><img src="/images/blog/latest-2/bg1.jpg" alt="" /></Link>
+                      <Link href="/blog-single"><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/blog/latest-2/bg1.jpg`} alt="" /></Link>
                     </div>
                                                           
                     <div className="wt-post-info">
@@ -44,7 +44,7 @@ export default function NewsSection() {
                 <div className="col-lg-4 col-md-6 m-b30">
                   <div className="blog-post blog-post-5-outer">
                     <div className="wt-post-media">
-                      <Link href="/blog-single"><img src="/images/blog/latest-2/bg2.jpg" alt="" /></Link>
+                      <Link href="/blog-single"><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/blog/latest-2/bg2.jpg`} alt="" /></Link>
                     </div> 
                     <div className="wt-post-info">
                       <div className="wt-post-meta">
@@ -64,7 +64,7 @@ export default function NewsSection() {
                 <div className="col-lg-4 col-md-6 m-b30">
                   <div className="blog-post blog-post-5-outer">
                     <div className="wt-post-media">
-                      <Link href="/blog-single"><img src="/images/blog/latest-2/bg3.jpg" alt="" /></Link>
+                      <Link href="/blog-single"><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/blog/latest-2/bg3.jpg`} alt="" /></Link>
                     </div>
                     <div className="wt-post-info">
                       <div className="wt-post-meta">

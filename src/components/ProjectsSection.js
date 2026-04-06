@@ -79,7 +79,7 @@ export default function ProjectsSection() {
         </div>
         
         <div className="twm-category-carousal-mid-media">
-          <img src="/images/helmet.png" alt="#" className="vert-move" />
+          <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/helmet.png`} alt="#" className="vert-move" />
         </div>
         
         <div className="owl-carousel twm-category-carousal-slider">
@@ -180,7 +180,7 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter1">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src="/images/project-3/4.png" alt="img20" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/4.png`} alt="img20" />
                     {/* <a className="elem pic-long project-view-btn" href="/images/project-3/4.png" title="Commercial Building" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m1.jpg">
                       <i className="fa fa-search-plus"></i>
                     </a> */}
@@ -197,7 +197,7 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter2">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src="/images/project-3/5.png" alt="img20" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/5.png`} alt="img20" />
                     {/* <a className="elem pic-long project-view-btn" href="/images/project-3/5.png" title="Mountain Hotel" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m2.jpg">
                       <i className="fa fa-search-plus"></i>
                     </a> */}
@@ -214,7 +214,7 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter1">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src="/images/project-3/6.png" alt="img20" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/6.png`} alt="img20" />
                     {/* <a className="elem pic-long project-view-btn" href="/images/project-3/6.png" title="New York Housing Project" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m3.jpg">
                       <i className="fa fa-search-plus"></i>
                     </a> */}
@@ -231,7 +231,7 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter2">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src="/images/project-3/7.png" alt="img20" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/7.png`} alt="img20" />
                     {/* <a className="elem pic-long project-view-btn" href="/images/project-3/7.png" title="House Extensions" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m4.jpg">
                       <i className="fa fa-search-plus"></i>
                     </a> */}
@@ -248,7 +248,7 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter3">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src="/images/project-3/8.png" alt="img20" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/8.png`} alt="img20" />
                     {/* <a className="elem pic-long project-view-btn" href="/images/project-3/8.png" title="Renovation" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m5.jpg">
                       <i className="fa fa-search-plus"></i>
                     </a> */}
@@ -265,7 +265,7 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter4">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src="/images/project-3/9.png" alt="img20" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/9.png`} alt="img20" />
                     {/* <a className="elem pic-long project-view-btn" href="/images/project-3/9.png" title="Roome Interior" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m6.jpg">
                       <i className="fa fa-search-plus"></i>
                     </a> */}
@@ -282,7 +282,7 @@ export default function ProjectsSection() {
               {/* <div className="swiper-slide" data-filter="filter1">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src="/images/project-3/m7.jpg" alt="img20" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/m7.jpg`} alt="img20" />
                     <a className="elem pic-long project-view-btn" href="/images/project-3/m7.jpg" title="Commercial Building" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m7.jpg">
                       <i className="fa fa-search-plus"></i>
                     </a>
@@ -299,7 +299,7 @@ export default function ProjectsSection() {
               {/* <div className="swiper-slide" data-filter="filter2">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src="/images/project-3/m8.jpg" alt="img20" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/m8.jpg`} alt="img20" />
                     <a className="elem pic-long project-view-btn" href="/images/project-3/m8.jpg" title="Mountain Hotel" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m8.jpg">
                       <i className="fa fa-search-plus"></i>
                     </a>
@@ -316,7 +316,7 @@ export default function ProjectsSection() {
               {/* <div className="swiper-slide" data-filter="filter1">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src="/images/project-3/m9.jpg" alt="img20" />
+                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/m9.jpg`} alt="img20" />
                     <a className="elem pic-long project-view-btn" href="/images/project-3/m9.jpg" title="New York Housing Project" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m9.jpg">
                       <i className="fa fa-search-plus"></i>
                     </a>

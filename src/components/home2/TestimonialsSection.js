@@ -28,7 +28,7 @@ const testimonials = [
 export default function TestimonialsSection() {
   return (
     <div className="section-full testimonial2-outer-wrap p-t120 p-b90 parallax-section">
-      <div className="parallax-image" style={{ backgroundImage: 'url(/images/background/testimonial-bg.jpg)' }}></div>
+      <div className="parallax-image" style={{ backgroundImage: 'url(${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/background/testimonial-bg.jpg)' }}></div>
       <div className="container">
         <div className="testimonial2-outer">
           <div className="section-head center wt-small-separator-outer when-bg-dark">

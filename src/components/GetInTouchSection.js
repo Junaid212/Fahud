@@ -4,7 +4,7 @@ export default function GetInTouchSection() {
   return (
     <div className="section-full get-intouch-style-2-wrap parallax-section">
       <video muted loop autoPlay playsInline>
-        <source src="/images/video-1.mp4" type="video/mp4" />
+        <source src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/video-1.mp4`} type="video/mp4" />
       </video>
       <div className="get-intouch-style-2-inner site-text-white">
         <span>We Achieve</span>                                

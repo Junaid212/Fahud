@@ -31,7 +31,7 @@ export default function TestimonialsSection() {
                     <div className="testimonial-detail clearfix">
                       <div className="testimonial-pic-block"> 
                         <div className="testimonial-pic">
-                          <img src="/images/testimonials/pic1.jpg" alt="" />
+                          <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/testimonials/pic1.jpg`} alt="" />
                         </div>
                       </div>                                          
                       <div className="testimonial-info">
@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
                     <div className="testimonial-detail clearfix">
                       <div className="testimonial-pic-block"> 
                         <div className="testimonial-pic">
-                          <img src="/images/testimonials/pic2.jpg" alt="" />
+                          <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/testimonials/pic2.jpg`} alt="" />
                         </div>
                       </div>                                          
                       <div className="testimonial-info">
@@ -95,7 +95,7 @@ export default function TestimonialsSection() {
                     <div className="testimonial-detail clearfix">
                       <div className="testimonial-pic-block"> 
                         <div className="testimonial-pic">
-                          <img src="/images/testimonials/pic3.jpg" alt="" />
+                          <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/testimonials/pic3.jpg`} alt="" />
                         </div>
                       </div>                                          
                       <div className="testimonial-info">
@@ -129,7 +129,7 @@ export default function TestimonialsSection() {
                     <div className="testimonial-detail clearfix">
                       <div className="testimonial-pic-block"> 
                         <div className="testimonial-pic">
-                          <img src="/images/testimonials/pic4.jpg" alt="" />
+                          <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/testimonials/pic4.jpg`} alt="" />
                         </div>
                       </div>                                          
                       <div className="testimonial-info">
@@ -162,7 +162,7 @@ export default function TestimonialsSection() {
                     <div className="testimonial-detail clearfix">
                       <div className="testimonial-pic-block"> 
                         <div className="testimonial-pic">
-                          <img src="/images/testimonials/pic5.jpg" alt="" />
+                          <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/testimonials/pic5.jpg`} alt="" />
                         </div>
                       </div>                                          
                       <div className="testimonial-info">

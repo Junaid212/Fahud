@@ -35,7 +35,7 @@ export default function HeroSection() {
             <div className="circle-text2">
               <div className="emblem-wrap">
                 <div className="emblem">Safety-and-Technical-Trading-</div>
-                {/* <i><img src="/images/in-circle-bx.png" alt="In Circle Pic" /></i> */}
+                {/* <i><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/in-circle-bx.png`} alt="In Circle Pic" /></i> */}
               </div>
             </div>
 
@@ -48,7 +48,7 @@ export default function HeroSection() {
                 <div className="hme2-bnr-review-box">
                   <span className="hme2-bnr-review-pic first-bx cursor-scale small"><img src="https://static.wixstatic.com/media/11062b_37eacc12491c48669cb14dae47385d90~mv2.jpeg/v1/crop/x_1496,y_0,w_2717,h_3806/fill/w_788,h_1104,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Happy%20Man%20.jpeg" alt="" /></span>
                   <span className="hme2-bnr-review-pic cursor-scale small"><img src="https://static.wixstatic.com/media/c076a325850e41408868b0b984c0078b.jpg/v1/crop/x_123,y_0,w_2845,h_3986/fill/w_788,h_1104,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Worker%20with%20Yellow%20Helmet.jpg" alt="" /></span>
-                  {/* <span className="hme2-bnr-review-pic cursor-scale small"><img src="/images/main-slider/slider2/follower/3.jpg" alt="" /></span> */}
+                  {/* <span className="hme2-bnr-review-pic cursor-scale small"><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/main-slider/slider2/follower/3.jpg`} alt="" /></span> */}
                   <span className="hme2-bnr-review-text">+</span>
                 </div>
                 <div className="hme2-bnr-review-line"></div>
