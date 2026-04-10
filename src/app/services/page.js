@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InnerBanner from '@/components/InnerBanner';
+import WhatWeDoSection from '@/components/home2/WhatWeDoSection';
 
 export default function Services() {
   return (
@@ -12,29 +13,28 @@ export default function Services() {
         
         <div className="page-content">
           <InnerBanner title="Services" />
-          
-
+          <WhatWeDoSection />
                
              
             {/*  WE PROVIDE SERVICE SECTION START  */}
-            <div className="section-full p-t120 p-b90">
-                <div className="container">
+            {/* <div className="section-full p-t120 p-b90">
+                <div className="container"> */}
                     
                     {/*  TITLE START */}
-                    <div className="section-head center wt-small-separator-outer">
+                    {/* <div className="section-head center wt-small-separator-outer">
                         <div className="wt-small-separator site-text-primary">
                             <i className="bi bi-house"></i>
                             <div>We Provide Service</div>
                         </div>
                         <h2 className="wt-title title_split_anim">Benefits You Get When Using Our Services</h2>
-                    </div>
+                    </div> */}
                     {/*  TITLE END */} 
 
-                    <div className="section-content">
+                    {/* <div className="section-content">
                         <div className="service-icon-box-wrap">                 
-                            <div className="row justify-content-center d-flex">
+                            <div className="row justify-content-center d-flex"> */}
                                 {/* Column-1 */}
-                                <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/1.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -47,9 +47,9 @@ export default function Services() {
                                         </div>
                                         
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* Column-2 */}
-                                <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/2.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -62,9 +62,9 @@ export default function Services() {
                                             <h3 className="wt-title"><a href="service-detail.html">Interior Design</a></h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* Column-3 */}    
-                                <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/3.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -76,9 +76,9 @@ export default function Services() {
                                             <h3 className="wt-title"><a href="service-detail.html">Construction Design</a></h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* Column-4 */}
-                                <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/4.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -91,9 +91,9 @@ export default function Services() {
                                         </div>
                                         
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* Column-5 */}
-                                <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/5.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -106,9 +106,9 @@ export default function Services() {
                                             <h3 className="wt-title"><a href="service-detail.html">Residential Design</a></h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* Column-6 */}    
-                                <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/6.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -120,18 +120,18 @@ export default function Services() {
                                             <h3 className="wt-title"><a href="service-detail.html">Plans And Project</a></h3>
                                         </div>
                                     </div>
-                                </div> 
-                            </div>
+                                </div>  */}
+                            {/* </div>
                         </div>
                     </div> 
 
                 </div>
                 
-            </div>   
+            </div>    */}
             {/*  WE PROVIDE SERVICE SECTION END  */} 
             
             {/*  AWARDS SECTION START  */}
-            <div className="section-full twm-achi-section-wrap p-t120 p-b90 " style={{"backgroundImage":"url(images/background/count-bg.jpg)"}}>
+            {/* <div className="section-full twm-achi-section-wrap p-t120 p-b90 " style={{"backgroundImage":"url(images/background/count-bg.jpg)"}}>
                 <div className="container">
                     <div className="twm-achi-section-content">
                         <div className="twm-achi-section-title">
@@ -140,7 +140,7 @@ export default function Services() {
                     </div>
                     <div className="twm-achi-bx">
                         <ul className="flex flex-fd-c flex-jc-sb">
-                            {/*  ITEM 01  */}
+                           
                             <li>
                                 <div className="twm-achi-bx-conent">
                                     <div className="twm-achi-bx-date"><b>03</b>2020</div>
@@ -151,7 +151,7 @@ export default function Services() {
                                 </div>
                             </li>
                 
-                            {/*  ITEM 02  */}
+                            
                             <li>
                                 <div className="twm-achi-bx-conent">
                                     <div className="twm-achi-bx-date"><b>06</b>2021</div>
@@ -163,7 +163,7 @@ export default function Services() {
                                 </div>
                             </li>
                 
-                            {/*  ITEM 03  */}
+                            
                             <li>
                                 <div className="twm-achi-bx-conent">
                                     <div className="twm-achi-bx-date"><b>09</b>2022</div>
@@ -175,7 +175,7 @@ export default function Services() {
                                 </div>
                             </li>
                 
-                            {/*  ITEM 04  */}
+                            
                             <li>
                                 <div className="twm-achi-bx-conent">
                                     <div className="twm-achi-bx-date"><b>05</b>2023</div>
@@ -187,7 +187,7 @@ export default function Services() {
                                 </div>
                             </li>
 
-                            {/*  ITEM 05  */}
+                            
                             <li>
                                 <div className="twm-achi-bx-conent">
                                     <div className="twm-achi-bx-date"><b>01</b>2025</div>
@@ -202,14 +202,14 @@ export default function Services() {
                         </ul>
                     </div>  
                 </div>
-            </div>
+            </div> */}
             {/* AWARDS SECTION END  */}
 
             {/*  PRICING TABLE SECTION START  */}
-            <div className="section-full p-t120 p-b90">
+            {/* <div className="section-full p-t120 p-b90">
                 <div className="container">
 
-                    {/*  TITLE START */}
+                    
                     <div className="section-head center wt-small-separator-outer text-center text-white">
                         <div className="wt-small-separator site-text-secondry">
                             <i className="bi bi-house"></i>
@@ -217,12 +217,12 @@ export default function Services() {
                         </div>
                         <h2 className="wt-title  title_split_anim">Best offer pricing table.</h2>
                     </div>
-                    {/*  TITLE END */}
+                
                             
                     <div className="section-content">
                         <div className="pricing-block-outer2">
                             <div className="row  align-items-center justify-content-center">
-                                {/*  Column 1  */}
+                               
                                 <div className="col-lg-4 col-md-6  m-b30">
                                     <div className="pricing-table-2">
                                         <div className="p-table-title">
@@ -250,7 +250,7 @@ export default function Services() {
                                         </div>
                                     </div>
                                 </div>
-                                {/*  Column 2  */}
+                                
                                 <div className="col-lg-4 col-md-6  m-b30">
                                     <div className="pricing-table-2 pricing-highlight">
                                         <div className="p-table-title">
@@ -278,7 +278,7 @@ export default function Services() {
                                         </div>
                                     </div>
                                 </div>
-                                {/*  Column 3  */}
+                               
                                 <div className="col-lg-4 col-md-6  m-b30">
                                     <div className="pricing-table-2">
                                         <div className="p-table-title">
@@ -311,7 +311,7 @@ export default function Services() {
                     </div>      
                         
                 </div>
-            </div>   
+            </div>    */}
             {/*  PRICING TABLE SECTION END  */}        
 
      

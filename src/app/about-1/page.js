@@ -109,7 +109,7 @@ export default function About1() {
                     <div className="col-lg-7 col-md-12 m-b30 company-exp-position">
                       <div className="company-exp">
                         <div className="company-exp-media">
-                          <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/fd1.png`} alt="FAHUD Safety Products" style={{ width: '100%', objectFit: 'cover', borderRadius: '4px' }} />
+                          <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/165.webp`} alt="FAHUD Safety Products" style={{ width: '100%', objectFit: 'cover', borderRadius: '4px' }} />
                         </div>
                         <div className="company-exp-tagline">
                           <span>We take pride in maintaining ethical business practices and delivering products that meet international safety standards.</span>

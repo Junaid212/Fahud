@@ -22,7 +22,7 @@ export default function Contact() {
                             <div className="container">
                                 <div className="contact-one">
                                     <div className="c-info-column-media parallax-section">
-                                        <img className="parallax-image" src="images/video-h.jpg" alt="#" />
+                                        <img className="parallax-image" src="images/project-3/169.webp" alt="#" />
                                     </div>
 
                                     <div className="row">
@@ -43,7 +43,15 @@ export default function Contact() {
                                                     <div className="c-info-icon"><i className="bi bi-geo-alt"></i></div>
                                                     <div className="c-info-detail">
                                                         <span className="m-t0">Address info</span>
-                                                        <p>1363-1385 Sunset Blvd Los Angeles, CA 90026, USA</p>
+                                                        <p>CR No. 1409645 | PO Box. 864 | PC 115
+Ghala Industrial Area | Muscat | Sultanate of Oman</p>
+                                                    </div>
+                                                </div>
+                                                <div className="c-info-column">
+                                                    <div className="c-info-icon"><i className="bi bi-geo-alt"></i></div>
+                                                    <div className="c-info-detail">
+                                                        <span className="m-t0">Address info</span>
+                                                        <p>FAHUD SAFETY AND TECHNICAL TRADING SPC, FALAJ AL QABAIL, SOHAR</p>
                                                     </div>
                                                 </div>
 
@@ -53,7 +61,7 @@ export default function Contact() {
                                                     </div>
                                                     <div className="c-info-detail">
                                                         <span className="m-t0">Phone number</span>
-                                                        <p><a href="tel:+216-761-8331">+216-761-8331</a></p>
+                                                        <p><a href="tel:+96891796734">+968 9179 6734</a></p>
                                                     </div>
                                                 </div>
 
@@ -61,17 +69,17 @@ export default function Contact() {
                                                     <div className="c-info-icon"><i className="bi bi-envelope"></i></div>
                                                     <div className="c-info-detail">
                                                         <span className="m-t0">Email address</span>
-                                                        <p>hvilinfo@gmail.com</p>
+                                                        <p>info@fahudoman.com</p>
                                                     </div>
                                                 </div>
 
-                                                <div className="c-info-column">
+                                                {/* <div className="c-info-column">
                                                     <div className="c-info-icon"><i className="bi bi-door-open"></i></div>
                                                     <div className="c-info-detail">
                                                         <span className="m-t0">Open Hour</span>
                                                         <p>Mon - Sat ( 09.00 AM to 06.00 PM )</p>
                                                     </div>
-                                                </div>
+                                                </div> */}
 
                                                 <div className="social-icons-contact">
                                                     <div className="twm-social2">
@@ -92,7 +100,7 @@ export default function Contact() {
 
                                                 <div className="contact-form-outer">
                                                     <h3 className="wt-title">Get in touch !</h3>
-                                                    <p>Fahud is a very modern and creative template that has been carefully crafted to suit any interior design website.
+                                                    <p>Send us your inquiry and our team will respond quickly with the best solutions for your requirements.
                                                     </p>
                                                     <form className="cons-contact-form" method="post" action="form-handler2.php">
                                                         <div className="row">
@@ -149,7 +157,7 @@ export default function Contact() {
                         <div className="gmap-outline">
                             <div className="google-map">
                                 <div style={{ "width": "100%" }}>
-                                    <iframe height="460" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.272796714594!2d-87.64937353634511!3d41.90849403896016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd324fc400797%3A0x76a989827d7eb84e!2s853%20W%20Blackhawk%20St%2C%20Chicago%2C%20IL%2060642%2C%20USA!5e0!3m2!1sen!2sin!4v1745326667544!5m2!1sen!2sin"></iframe>
+                                    <iframe height="460" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6174466533625!2d58.3758374!3d23.5821792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91ff935c8c42b1%3A0x7ca207a215d5c997!2sFahud%20Safety%20And%20Technical%20Trading%20SPC!5e0!3m2!1sen!2sin!4v1775554796959!5m2!1sen!2sin"></iframe>
                                 </div>
                             </div>
                         </div>

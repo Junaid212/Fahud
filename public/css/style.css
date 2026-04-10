@@ -6650,7 +6650,7 @@ button.scroltop span {
 }
 
 .wt-bnr-inr-entry .banner-title-outer .banner-title-name .wt-title {
-  color: #032B4A;
+  color: #ffffff;
 }
 
 /** - Breadcrumb */
@@ -6662,7 +6662,7 @@ button.scroltop span {
 
 .wt-breadcrumb li {
   padding-right: 30px;
-  color: #032B4A;
+  color: #ffffff;
   position: relative;
   display: inline-block;
   font-size: 16px;
@@ -6670,7 +6670,7 @@ button.scroltop span {
 }
 
 .wt-breadcrumb li a {
-  color: #032B4A;
+  color: #ffffff;
 }
 
 .wt-breadcrumb li a:hover {
@@ -6682,7 +6682,7 @@ button.scroltop span {
   position: absolute;
   right: 8px;
   top: 3px;
-  color: #032B4A;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 600;
 }
@@ -8219,7 +8219,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 .overlay-wraper .overlay-main.innr-bnr-olay {
   opacity: 1;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(249, 243, 234) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 65%, rgb(249, 243, 234) 100%);
 }
 
 @media (max-width: 1024px) {
@@ -10765,7 +10765,7 @@ form.woocommerce-ordering:after {
 }
 
 .icon-box-style-one-wrap .icon-box-style-one .icon-box-one-title {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .icon-box-style-one-wrap .icon-box-style-one .icon-box-one-title .wt-title {
@@ -10832,13 +10832,15 @@ form.woocommerce-ordering:after {
 }
 
 .icon-box-style-one-wrap .icon-box-style-one:hover .icon-box-style-one-media {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   height: 260px;
 }
 
 .icon-box-style-one-wrap .icon-box-style-one:hover .icon-box-style-one-media img {
   height: calc(100% - 60px);
   z-index: -1;
+   top: 30px;
+  width: calc(100% - 60px);
 }
 
 .icon-box-style-one-wrap .icon-box-style-one:hover .icon-box-one-alpha {

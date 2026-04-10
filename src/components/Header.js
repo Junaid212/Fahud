@@ -45,7 +45,7 @@ export default function Header() {
 
                 <li className="has-child">
                   {/* <Link href="/services">Services</Link> */}
-                  <Link href="#">Services</Link>
+                  <Link href="/services">Services</Link>
                   {/* <ul className="sub-menu">
                     <li><Link href="/services">All Services</Link></li>
                     <li><Link href="/service-detail">Service Detail</Link></li>
@@ -54,7 +54,7 @@ export default function Header() {
 
                 <li className="has-child">
                   {/* <Link href="/project-1">Products</Link> */}
-                  <Link href="#">Products</Link>
+                  <Link href="/project-2">Products</Link>
                   {/* <ul className="sub-menu">
                     <li><Link href="/project-1">Products Grid</Link></li>
                     <li><Link href="/project-2">Products List</Link></li>
@@ -63,7 +63,7 @@ export default function Header() {
                 </li>
 
                 <li>
-                  <Link href="#">Contact</Link>
+                  <Link href="/contact">Contact</Link>
                 </li>
 
               </ul>
