@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function InnerBanner({ title, pathName, bgImage = '/images/background/banner-bg.webp' }) {
+export default function InnerBanner({ title, pathName, bgImage = './images/background/banner-bg.webp' }) {
   return (
     <div className="wt-bnr-inr overlay-wraper bg-center" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="overlay-main innr-bnr-olay"></div>
