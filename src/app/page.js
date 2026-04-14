@@ -14,6 +14,8 @@ import GetInTouchSection from '@/components/GetInTouchSection';
 import NewsSection from '@/components/NewsSection';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/home2/HeroSection';
+import ProductHero from '@/components/home2/ProductHero';
+import HeroScrollSequence from '@/components/home2/HeroScrollSequence';
 import WhatWeDoSection from '@/components/home2/WhatWeDoSection';
 import AboutInfoSection from '@/components/AboutInfoSection';
 import CounterSection from '@/components/home2/CounterSection';
@@ -26,7 +28,9 @@ export default function Home() {
         <Header />
         
         <div className="page-content">
-          <HeroSection />
+          {/* <HeroScrollSequence /> */}
+          <ProductHero />
+          {/* <HeroSection /> */}
           {/* <HeroSlider /> */}
           {/* <Benefits /> */}
           {/* <AboutSection /> */}
