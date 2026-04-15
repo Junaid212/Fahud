@@ -140,7 +140,7 @@ export default function ProductHero() {
             x: kf.x,
             scale: kf.s,
             filter: `blur(${kf.b}px)`,
-            opacity: kf.o,
+            opacity: i === 0 ? 1 : 0,
             zIndex: kf.z,
           });
         });
@@ -294,7 +294,7 @@ export default function ProductHero() {
         /* ─── Pinned viewport ─── */
         .pd-sticky {
           position: sticky;
-          top: 120px;
+          top: 0;
           height: 100vh;
           width: 100%;
           overflow: hidden;
@@ -338,7 +338,12 @@ export default function ProductHero() {
           justify-content: center;
           padding: 0 32px 0 72px;
           will-change: transform, opacity;
+          opacity: 0;
         }
+          .pd-text:first-child {
+  opacity: 1;
+}
+          
 
         /* Brand label */
         .pd-brand {
@@ -362,8 +367,8 @@ export default function ProductHero() {
 
         /* Product title — matches reference font weight/style */
         .pd-title {
-          font-size: clamp(28px, 3.2vw, 52px);
-          font-weight: 700;
+          font-size: clamp(32px, 4.5vw, 56px);
+          font-weight: 900;
           line-height: 1.12;
           letter-spacing: -1.5px;
           color: #0f172a;
@@ -399,8 +404,8 @@ export default function ProductHero() {
           position: absolute;
           bottom: -2px;
           left: 0; right: 0;
-          height: 1px;
-          background: currentColor;
+          // height: 1px;
+          // background: currentColor;
           transform-origin: left;
           transition: transform 0.28s ease;
         }
@@ -427,6 +432,7 @@ export default function ProductHero() {
           justify-content: center;
           will-change: transform, filter, opacity;
           transform-style: preserve-3d;
+          opacity: 0;
         }
 
         /* Ambient glow blob beneath product */
@@ -659,6 +665,7 @@ export default function ProductHero() {
                     alt={p.alt}
                     className="pd-img"
                     draggable={false}
+                    loading="eager"
                   />
                 </div>
               ))}
@@ -700,6 +707,7 @@ export default function ProductHero() {
 
         </div>{/* /pd-sticky */}
       </div>{/* /pd-root */}
+      
     </>
   );
 }

@@ -20,6 +20,8 @@ import WhatWeDoSection from '@/components/home2/WhatWeDoSection';
 import AboutInfoSection from '@/components/AboutInfoSection';
 import CounterSection from '@/components/home2/CounterSection';
 import TestimonialsSection from '@/components/home2/TestimonialsSection';
+import AboutSectionNew from '@/components/AboutSectionNew';
+import ArcCarousel from '@/components/ArcCrousel';
 
 export default function Home() {
   return (
@@ -30,11 +32,12 @@ export default function Home() {
         <div className="page-content">
           {/* <HeroScrollSequence /> */}
           <ProductHero />
+          <AboutSectionNew />
           {/* <HeroSection /> */}
           {/* <HeroSlider /> */}
           {/* <Benefits /> */}
           {/* <AboutSection /> */}
-          <VideoSection />
+          {/* <VideoSection /> */}
           {/* <WhatWeDoSection /> */}
           <AboutInfoSection />
           {/* <CounterSection /> */}
@@ -46,6 +49,7 @@ export default function Home() {
           <ProjectsSection />
           <Benefits />
           <TestimonialsSection />
+          <ArcCarousel/>
           <ClientLogoSection />
           {/* <TeamSection /> */}
           {/* <TestimonialsSection /> */}
