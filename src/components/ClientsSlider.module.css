@@ -1,0 +1,102 @@
+.sliderSection {
+  position: relative;
+  background-color: #F9F3EA;
+  padding: 12rem 0 15rem 0; /* Extra padding for rotated content */
+  overflow: hidden; /* Hide the scaled edges */
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.title {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: clamp(1rem, 6vw, 58px);
+  font-weight: 900;
+  color: #032B4A;
+  z-index: 10;
+  letter-spacing: -0.03em;
+}
+
+.tiltedWrapper {
+  transform: rotate(-8deg) scale(1.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1vw; /* Uniform gap between rows */
+  width: 100%;
+}
+
+.marqueeRow {
+  display: flex;
+  width: 100vw;
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content; /* Critical for shrink-wrap */
+  gap: 1vw;
+  padding-left: 1vw; /* Matches the gap so seamless loop is perfect */
+}
+
+/* Top slider moves Left -> Right (meaning start at -50% and go to 0%) */
+.trackLeftToRight {
+  animation: slideRight 30s linear infinite;
+}
+
+/* Bottom slider moves Right -> Left (meaning start at 0% and go to -50%) */
+.trackRightToLeft {
+  animation: slideLeft 30s linear infinite;
+}
+
+@keyframes slideLeft {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes slideRight {
+  0% { transform: translate3d(-50%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.card {
+  width: clamp(150px, 20vw, 200px);
+  aspect-ratio: 4/3;
+  background-color: #0a0a0a;
+  border: 1px solid #ffffff; /* Gives grid separation effect */
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  /* cursor: pointer; */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  z-index: 5;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  background-color: #111;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .tiltedWrapper {
+    transform: rotate(-10deg) scale(1.5);
+  }
+  .card {
+    border-width: 4px;
+    width: clamp(100px, 40vw, 200px);
+  }
+}

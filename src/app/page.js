@@ -22,6 +22,7 @@ import CounterSection from '@/components/home2/CounterSection';
 import TestimonialsSection from '@/components/home2/TestimonialsSection';
 import AboutSectionNew from '@/components/AboutSectionNew';
 import ArcCarousel from '@/components/ArcCrousel';
+import ClientsSlider from '@/components/ClientsSlider';
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
           {/* <HeroScrollSequence /> */}
           <ProductHero />
           <AboutSectionNew />
+          
           {/* <HeroSection /> */}
           {/* <HeroSlider /> */}
           {/* <Benefits /> */}
@@ -49,8 +51,9 @@ export default function Home() {
           <ProjectsSection />
           <Benefits />
           <TestimonialsSection />
-          <ArcCarousel/>
-          <ClientLogoSection />
+          <ClientsSlider/>
+          {/* <ArcCarousel/> */}
+          {/* <ClientLogoSection /> */}
           {/* <TeamSection /> */}
           {/* <TestimonialsSection /> */}
           {/* <GetInTouchSection /> */}

@@ -1,12 +1,49 @@
 'use client';
 
 import { Activity, Heart, Zap } from 'lucide-react';
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutSectionNew() {
+  const imageRef = useRef(null);
+  
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      // Set initial state for the image
+      gsap.set(imageRef.current, {
+        y: -200,
+        opacity: 0,
+        scale: 0.95
+      });
+
+      // Create scroll-triggered animation
+      gsap.to(imageRef.current, {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 2.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top 75%",
+          end: "top 50%",
+          toggleActions: "play none none none",
+          once: true
+        }
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <>
-      <section id="about">
-        <div id="gradient" />
+      <section id="about" className='fade-bottom' >
+        
+        <div id="gradient"  />
 
         <div id="watermark" aria-hidden="true">
           <span id="watermarkText">Fahud</span>
@@ -14,7 +51,8 @@ export default function AboutSectionNew() {
 
         <div id="content">
           <div id="left">
-            <h1 id="title">
+            
+            <h1 id="title" className='title_split_anim' >
               About <span id="cyan">FAHUD</span> Safety and
               <br id="desktopBreak" /> Technical Trading Oman{' '}
               <span id="titleHighlight">
@@ -33,6 +71,7 @@ export default function AboutSectionNew() {
             <div id="deviceWrapper">
               <div id="deviceGlow" />
               <img
+              ref={imageRef}
                 src="/images/171.webp"
                 alt="PulzCAD wearable ECG device"
                 id="deviceImage"
@@ -72,17 +111,18 @@ export default function AboutSectionNew() {
       <style >{`
         #about {
           position: relative;
-          min-height: 100vh;
+          min-height: 70vh;
           overflow: hidden;
           display: flex;
           flex-direction: column;
-          padding:0 50px;
+          padding:0 50px 0 50px;
+          
         }
 
         #gradient {
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, #0a1e2eff 0%, #0d1f35ff 30%, #0b212eff 60%, #092624 100%);
+          background-color: #F9F3EA;
         }
 
         #watermark {
@@ -100,7 +140,7 @@ export default function AboutSectionNew() {
           letter-spacing: 0.10em;
           text-align: center;
           line-height: 1;
-          color: rgba(0, 180, 160, 0.07);
+          color: rgba(180, 123, 0, 0.07);
           white-space: nowrap;
           font-size: clamp(80px, 18vw, 260px);
         }
@@ -149,7 +189,7 @@ export default function AboutSectionNew() {
           font-weight: 700;
           line-height: 1.2;
           margin-bottom: 1.5rem;
-          color: #e8f4f2;
+          color: #041337ff;
           font-size: clamp(28px, 4vw, 56px);
         }
 
@@ -221,8 +261,8 @@ export default function AboutSectionNew() {
           border: none;
           cursor: pointer;
           transition: all 0.2s ease;
-          background: rgba(255, 255, 255, 0.08);
-          color: #e8f4f2;
+          background: rgba(19, 56, 119, 0.2);
+          color: #041337ff;
           border: 1px solid rgba(255, 255, 255, 0.15);
         }
 
@@ -270,7 +310,9 @@ export default function AboutSectionNew() {
           object-fit: cover;
           border-radius: 1.5rem;
           transform: rotate(-12deg) perspective(800px) rotateY(-8deg);
-          filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 40px rgba(0, 229, 204, 0.2));
+          filter: drop-shadow(0 80px 70px rgba(198, 124, 45, 0.6)) drop-shadow(0 0 40px rgba(229, 172, 0, 0.2));
+          will-change: transform, opacity;
+          transform-origin: center;
         }
 
         #right {
@@ -297,7 +339,7 @@ export default function AboutSectionNew() {
         #description {
           line-height: 1.75;
           margin-bottom: 2rem;
-          color: rgba(232, 244, 242, 0.75);
+          color: #041337ff;
           font-size: clamp(13px, 1.1vw, 15px);
         }
 

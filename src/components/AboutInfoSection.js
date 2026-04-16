@@ -1,7 +1,7 @@
 export default function AboutInfoSection() {
     return (
         
-                    <div className="section-full twm-acd-st-1">
+                    <div className="section-full twm-acd-st-1 fade-bottom">
                         <div className="container">
           {/* TITLE START */}
           <div className="section-head center wt-small-separator-outer">
@@ -13,11 +13,11 @@ export default function AboutInfoSection() {
           </div>
           {/* TITLE END */}
         </div>
-                        <div className="acd-bx" data-background="https://i.pinimg.com/1200x/f7/cb/c0/f7cbc0801d3111be0909d995b8075a30.jpg" style={{ "backgroundImage": "url(&quot" }}>
-                            <div className="twm-acd-overlay"></div>
+                        <div className="acd-bx " data-background="https://i.pinimg.com/1200x/f7/cb/c0/f7cbc0801d3111be0909d995b8075a30.jpg" style={{ "backgroundImage": "url(&quot" }}>
+                            <div className="twm-acd-overlay "></div>
 
-                            <article className="section" data-background="https://i.pinimg.com/1200x/f7/cb/c0/f7cbc0801d3111be0909d995b8075a30.jpg">
-                                <span className="close">
+                            <article className="section " data-background="https://i.pinimg.com/1200x/f7/cb/c0/f7cbc0801d3111be0909d995b8075a30.jpg">
+                                <span className="close ">
                                     <span className="cross">
                                         <span className="a"></span>
                                         <span className="b"></span>

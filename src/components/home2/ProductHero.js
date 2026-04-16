@@ -17,7 +17,7 @@ const PRODUCTS = [
     img: `${BASE}/images/helmet.png`,
     alt: 'FAHUD Industrial Safety Helmet',
     href: '/services',
-    glow: 'rgba(180,160,255,0.35)',
+    glow: '#086698af',
     bgGrad: ['#e8e2ff', '#f5f0ff', '#deeeff'],   // purple-blue-white
   },
   {
@@ -28,7 +28,7 @@ const PRODUCTS = [
     img: `${BASE}/images/170.webp`,
     alt: 'FAHUD Respiratory Protection',
     href: '/services',
-    glow: 'rgba(120,200,255,0.35)',
+    glow: 'rgba(120, 201, 255, 0.84)',
     bgGrad: ['#daf0ff', '#eef8ff', '#e0f5ff'],   // cyan-white
   },
   {
@@ -39,7 +39,7 @@ const PRODUCTS = [
     img: `${BASE}/images/171.webp`,
     alt: 'FAHUD Full Body PPE',
     href: '/services',
-    glow: 'rgba(120,240,200,0.35)',
+    glow: 'rgba(80, 224, 176, 0.65)',
     bgGrad: ['#d4f5e9', '#edfaf5', '#e4fff5'],   // green-white
   },
   {
@@ -50,7 +50,7 @@ const PRODUCTS = [
     img: `${BASE}/images/172.webp`,
     alt: 'FAHUD Full Body PPE',
     href: '/services',
-    glow: 'rgba(120,240,200,0.35)',
+    glow: 'rgba(240, 212, 120, 0.6)',
     bgGrad: ['#d4f5e9', '#edfaf5', '#e4fff5'],   // green-white
   },
   {
@@ -61,7 +61,7 @@ const PRODUCTS = [
     img: `${BASE}/images/helmet.png`,
     alt: 'FAHUD Full Body PPE',
     href: '/services',
-    glow: 'rgba(120,240,200,0.35)',
+    glow: '#f9f3eaa9',
     bgGrad: ['#d4f5e9', '#edfaf5', '#e4fff5'],   // green-white
   },
 ];
@@ -583,9 +583,9 @@ export default function ProductHero() {
 
       {/* ──────────────────── OUTER SCROLL WRAPPER ──────────────────── */}
       <div
-        className="pd-root"
+        className="pd-root fade-bottom"
         ref={wrapperRef}
-        id="product-depth-hero"
+        id="product-depth-hero about"
         aria-label="Product showcase"
       >
 
@@ -603,7 +603,7 @@ export default function ProductHero() {
           ))}
 
           {/* ── Layout ── */}
-          <div className="pd-layout">
+          <div className="pd-layout" >
 
             {/* ════════════════════════════════════════════════
                 LEFT: Text panels (all stacked, GSAP controls opacity/y)

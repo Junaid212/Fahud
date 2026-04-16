@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function AboutSection() {
   return (
     <div className="section-full p-t120 p-b90 about-section-one-wrap">
-      <div className="about-section-one">
+      <div className="about-section-one ">
         <div className="container">
           <div className="section-content">
             <div className="row">
