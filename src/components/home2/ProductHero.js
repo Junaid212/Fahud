@@ -564,18 +564,37 @@ export default function ProductHero() {
 
         /* ─── Responsive ─── */
         @media (max-width: 900px) {
-          .pd-layout { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+          .pd-layout { 
+            display: block; 
+          }
+          .pd-stage { 
+            position: absolute;
+            inset: 0;
+            height: 100vh;
+            min-height: unset;
+            z-index: 1;
+          }
           .pd-left {
             -webkit-mask-image: none; mask-image: none;
-            overflow: visible; position: relative;
+            overflow: visible; 
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
           }
           .pd-text {
-            position: relative; inset: auto;
-            padding: 60px 24px 16px;
-            text-align: center; align-items: center;
+            position: absolute; 
+            inset: auto 0 0 0; 
+            padding: 0 24px 40px 24px;
+            text-align: left; 
+            align-items: flex-start;
+            pointer-events: auto;
           }
-          .pd-stage { min-height: 45vh;  }
-          .pd-card { width: min(300px, 72vw); height: min(360px, 46vh); }
+          .pd-card { 
+            width: min(350px, 85vw); 
+            height: min(400px, 50vh); 
+            top: 42%;
+          }
           .pd-circle-btn, .pd-scroll-hint { display: none; }
           .pd-counter { right: 20px; bottom: 20px; }
         }

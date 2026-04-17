@@ -23,6 +23,7 @@ import TestimonialsSection from '@/components/home2/TestimonialsSection';
 import AboutSectionNew from '@/components/AboutSectionNew';
 import ArcCarousel from '@/components/ArcCrousel';
 import ClientsSlider from '@/components/ClientsSlider';
+import FooterNew from '@/components/FooterNew';
 
 export default function Home() {
   return (
@@ -59,8 +60,8 @@ export default function Home() {
           {/* <GetInTouchSection /> */}
           {/* <NewsSection /> */}
         </div>
-        
-        <Footer />
+        <FooterNew/>
+        {/* <Footer /> */}
       </div>
     </>
   );

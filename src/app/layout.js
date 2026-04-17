@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* CSS Assets */}
         <link rel="stylesheet" href={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/css/bootstrap.min.css`} />
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <div className="page-wraper">
           {children}
         </div>

@@ -115,8 +115,12 @@ export default function AboutSectionNew() {
           overflow: hidden;
           display: flex;
           flex-direction: column;
-          padding:0 50px 0 50px;
-          
+          padding: 0 20px;
+        }
+        @media (min-width: 768px) {
+          #about {
+            padding: 0 50px;
+          }
         }
 
         #gradient {
@@ -150,9 +154,9 @@ export default function AboutSectionNew() {
           z-index: 10;
           display: flex;
           flex-direction: column;
-          gap: 2rem;
+          gap: 3rem;
           min-height: 100vh;
-          padding: 3rem 1.5rem;
+          padding: 3rem 0;
           align-items: center;
         }
 
@@ -170,12 +174,14 @@ export default function AboutSectionNew() {
           justify-content: center;
           width: 100%;
           padding-top: 2rem;
+          text-align: center;
         }
 
         @media (min-width: 1024px) {
           #left {
             width: 42%;
             padding-top: 0;
+            text-align: left;
           }
         }
 
@@ -231,6 +237,13 @@ export default function AboutSectionNew() {
           flex-wrap: wrap;
           gap: 0.75rem;
           margin-top: 1rem;
+          justify-content: center;
+        }
+
+        @media (min-width: 1024px) {
+          #buttons {
+            justify-content: flex-start;
+          }
         }
 
         #btn_btnPrimary {
@@ -290,8 +303,13 @@ export default function AboutSectionNew() {
 
         #deviceWrapper {
           position: relative;
-          width: clamp(260px, 38vw, 520px);
+          width: clamp(240px, 75vw, 400px);
           aspect-ratio: 1;
+        }
+        @media (min-width: 1024px) {
+          #deviceWrapper {
+            width: clamp(260px, 38vw, 520px);
+          }
         }
 
         #deviceGlow {
@@ -320,12 +338,14 @@ export default function AboutSectionNew() {
           flex-direction: column;
           justify-content: center;
           width: 100%;
+          text-align: center;
         }
 
         @media (min-width: 1024px) {
           #right {
             width: 30%;
             padding-left: 2rem;
+            text-align: left;
           }
         }
 
