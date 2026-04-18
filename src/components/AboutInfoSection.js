@@ -1,7 +1,7 @@
 export default function AboutInfoSection() {
     return (
         
-                    <div className="section-full twm-acd-st-1 fade-bottom">
+                    <div className="section-full  twm-acd-st-1 ">
                         <div className="container">
           {/* TITLE START */}
           <div className="section-head center wt-small-separator-outer">

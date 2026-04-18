@@ -72,7 +72,7 @@ export default function AboutSectionNew() {
               <div id="deviceGlow" />
               <img
               ref={imageRef}
-                src="/images/171.webp"
+                src="./images/171.webp"
                 alt="PulzCAD wearable ECG device"
                 id="deviceImage"
               />

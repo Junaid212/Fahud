@@ -64,7 +64,7 @@
 .card {
   width: clamp(150px, 20vw, 200px);
   aspect-ratio: 4/3;
-  background-color: #0a0a0a;
+  background-color: #fffdfd;
   border: 1px solid #ffffff; /* Gives grid separation effect */
   overflow: hidden;
   position: relative;
@@ -96,7 +96,10 @@
     transform: rotate(-10deg) scale(1.5);
   }
   .card {
-    border-width: 4px;
-    width: clamp(100px, 40vw, 200px);
+    border-width: 1px;
+    width: clamp(50px, 30vw, 80px);
   }
+  .sliderSection {
+  padding: 12rem 0 0 0;
+}
 }

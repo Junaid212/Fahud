@@ -597,6 +597,31 @@ export default function ProductHero() {
           }
           .pd-circle-btn, .pd-scroll-hint { display: none; }
           .pd-counter { right: 20px; bottom: 20px; }
+
+          .pd-brand {
+          font-size: 9px;
+        }
+
+        /* Product title — matches reference font weight/style */
+        .pd-title {
+          font-size: clamp(24px, 4.5vw, 58px);
+          line-height: 1.12;
+          letter-spacing: -0.1px;
+        }
+
+        /* Description */
+        .pd-desc {
+          font-size: 9px;
+          line-height: 1.2;
+          max-width: 200px;
+          margin-bottom: 18px;
+        }
+          .pd-cta {
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 2px;
+        }
+
         }
       `}</style>
 

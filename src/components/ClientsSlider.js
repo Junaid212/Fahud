@@ -91,7 +91,7 @@ export default function ClientsSlider({ images = defaultImages }) {
   const reversedImages = [...images].reverse();
 
   return (
-    <section className={`${styles.sliderSection} fade-both`} ref={sectionRef}>
+    <section className={`${styles.sliderSection} `} ref={sectionRef}>
       <h2 className={`${styles.title} wt-title title_split_anim center`}>Our Clients</h2>
 
       <div className={styles.tiltedWrapper} ref={wrapperRef}>

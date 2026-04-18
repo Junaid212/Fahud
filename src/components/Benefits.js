@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export default function Benefits() {
   return (
-    <div className="section-full p-t120 p-b90 twm-we-pro-service-wrap">
-      <div className="container">
+    <div className="section-full p-t20 p-b30  twm-we-pro-service-wrap" style={{marginBottom:'50px'}}>
+      <div className="container ">
         {/* TITLE START */}
         <div className="section-head center wt-small-separator-outer">
           <div className="wt-small-separator site-text-primary">

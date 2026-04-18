@@ -606,12 +606,14 @@ const FooterNew = () => {
 
   /* Make Fahud text and arrow huge but fit proportionally at bottom */
   .footer-faded-text {
-    // bottom: -15px !important;
+    bottom: 15px !important;
   }
   
   .footer-faded-text h1 {
-    font-size: 110px !important;
-    line-height: 11.2 !important;
+    font-size: 100px !important;
+    line-height: 13 !important;
+    letter-spacing: -1.5px !important;
+    z-index: -10 !important;
   }
 
   /* Manage spacing for bottom bar */
