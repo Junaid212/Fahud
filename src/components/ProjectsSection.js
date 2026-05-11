@@ -6,12 +6,27 @@ import { useEffect } from 'react';
 
 export default function ProjectsSection() {
   useEffect(() => {
-    let checkInterval = setInterval(() => {
-      if (typeof window !== 'undefined' && window.initProjectsFilterSlider && window.jQuery && window.Swiper) {
-        clearInterval(checkInterval);
-        window.initProjectsFilterSlider();
+    const initAll = () => {
+      if (typeof window !== 'undefined' && window.jQuery) {
+        if (window.twm_category_carousal) window.twm_category_carousal();
+        if (window.twm_category_carousal_2) window.twm_category_carousal_2();
+        if (window.initProjectsFilterSlider && window.Swiper) window.initProjectsFilterSlider();
+        if (window.wow_animation) window.wow_animation();
+        if (window.Cursor_section) window.Cursor_section();
       }
-    }, 100);
+    };
+
+    // Initial check
+    initAll();
+
+    // Re-check periodically in case scripts are still loading
+    let checkInterval = setInterval(() => {
+      if (typeof window !== 'undefined' && window.jQuery && window.twm_category_carousal && window.initProjectsFilterSlider) {
+        initAll();
+        clearInterval(checkInterval);
+      }
+    }, 500);
+
     return () => clearInterval(checkInterval);
   }, []);
 
@@ -31,6 +46,16 @@ export default function ProjectsSection() {
               <div className="twm-category-name">Fahud</div>
             </div>
           </div>
+          <style>{`
+          @media (max-width: 767px){
+            .section-full{
+              margin-top:-10px !important;
+            }
+              .owl-carousel{
+              margin-top:-60px !important;
+            }
+          }
+          `}</style>
           {/* COLUMN 2 */}
           <div className="item">
             <div className="twm_category_bx cursor-scale" data-wow-duration="1000ms">

@@ -15,20 +15,27 @@ All JavaScript fuctions Start
 	}
 
 	// Category function by = owl.js **********//
-	function twm_category_carousal() {
-		jQuery('.twm-category-carousal-slider').owlCarousel({
-			loop: true,
-			margin: 30,
-			center: false,
-			nav: false,
-			dots: false,
-			autoWidth: true,
-			autoplay: true,
-			slideTransition: 'linear',
-			autoplayTimeout: 5000,
-			autoplaySpeed: 5000,
-			navText: ['<i class="bi bi-arrow-left"></i>', '<i class="bi bi-arrow-right"></i>']
-		});
+	window.twm_category_carousal = function() {
+		if (jQuery('.twm-category-carousal-slider').length) {
+			if (jQuery('.twm-category-carousal-slider').hasClass('owl-loaded')) {
+				jQuery('.twm-category-carousal-slider').trigger('destroy.owl.carousel');
+				jQuery('.twm-category-carousal-slider').removeClass('owl-loaded owl-drag');
+				jQuery('.twm-category-carousal-slider').find('.owl-stage-outer').children().unwrap();
+			}
+			jQuery('.twm-category-carousal-slider').owlCarousel({
+				loop: true,
+				margin: 30,
+				center: false,
+				nav: false,
+				dots: false,
+				autoWidth: true,
+				autoplay: true,
+				slideTransition: 'linear',
+				autoplayTimeout: 5000,
+				autoplaySpeed: 5000,
+				navText: ['<i class="bi bi-arrow-left"></i>', '<i class="bi bi-arrow-right"></i>']
+			});
+		}
 	}
 
 	// Services function by = owl.js **********//
@@ -155,21 +162,28 @@ All JavaScript fuctions Start
 
 
 	// Category function by = owl.js **********//
-	function twm_category_carousal_2() {
-		jQuery('.twm-category-carousal-slider2').owlCarousel({
-			loop: true,
-			margin: 30,
-			center: false,
-			nav: false,
-			rtl: true,
-			dots: false,
-			autoWidth: true,
-			autoplay: true,
-			slideTransition: 'linear',
-			autoplayTimeout: 5000,
-			autoplaySpeed: 5000,
-			navText: ['<i class="bi bi-arrow-left"></i>', '<i class="bi bi-arrow-right"></i>']
-		});
+	window.twm_category_carousal_2 = function() {
+		if (jQuery('.twm-category-carousal-slider2').length) {
+			if (jQuery('.twm-category-carousal-slider2').hasClass('owl-loaded')) {
+				jQuery('.twm-category-carousal-slider2').trigger('destroy.owl.carousel');
+				jQuery('.twm-category-carousal-slider2').removeClass('owl-loaded owl-drag');
+				jQuery('.twm-category-carousal-slider2').find('.owl-stage-outer').children().unwrap();
+			}
+			jQuery('.twm-category-carousal-slider2').owlCarousel({
+				loop: true,
+				margin: 30,
+				center: false,
+				nav: false,
+				rtl: true,
+				dots: false,
+				autoWidth: true,
+				autoplay: true,
+				slideTransition: 'linear',
+				autoplayTimeout: 5000,
+				autoplaySpeed: 5000,
+				navText: ['<i class="bi bi-arrow-left"></i>', '<i class="bi bi-arrow-right"></i>']
+			});
+		}
 	}
 
 	// > LIGHTBOX Gallery Popup function	by = lc_lightbox.lite.js =========================== //      
@@ -697,10 +711,12 @@ All JavaScript fuctions Start
 
 
 	//  Cursor Section Start function by = gsap.min.js **********//
-	function Cursor_section() {
+	window.Cursor_section = function() {
 		if (typeof gsap === 'undefined') return;
 		let cursor = document.querySelector(".cursor");
 		let cursor2 = document.querySelector(".cursor2");
+		if (!cursor || !cursor2) return;
+		
 		let cursorScale = document.querySelectorAll(".cursor-scale");
 		let mouseX = 0;
 		let mouseY = 0;
@@ -966,18 +982,19 @@ All JavaScript fuctions Start
 	}
 
 	//Wow Animation
-	function wow_animation() {
-		new WOW().init();
-		var wow = new WOW(
-			{
-				animateClass: 'animated',
-				offset: 100,
-				callback: function (box) {
-					// console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	window.wow_animation = function() {
+		if (typeof WOW !== 'undefined') {
+			var wow = new WOW(
+				{
+					animateClass: 'animated',
+					offset: 100,
+					callback: function (box) {
+						// console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+					}
 				}
-			}
-		);
-		wow.init();
+			);
+			wow.init();
+		}
 	}
 	// > skills bar function function by  = custom.js ========================= //
 
@@ -1047,7 +1064,7 @@ All JavaScript fuctions Start
 			// > Nav submenu on off function by = custome.js ===================//
 			mobile_nav(),
 			// Mobile side drawer function by = custom.js
-			mobile_side_drawer(),
+			// mobile_side_drawer(),
 			// Home page Testimonial 1 Slider function by = owl.carousel.js ========================== //
 			testimonial_1_content(),
 			//  Client logo Carousel function by = owl.carousel.js ========================== //

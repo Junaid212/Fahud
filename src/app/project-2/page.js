@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InnerBanner from '@/components/InnerBanner';
+import FooterNew from '@/components/FooterNew';
 
 export default function Project2() {
   useEffect(() => {
@@ -239,14 +240,31 @@ export default function Project2() {
                         {/*  PAGINATION END  */}
 
                         {/*  PROJECT CONTENT START  */}
-                        {/* <style>{`
-                            .project-new-2.no-hover:hover .wt-img-effect img {
-                                opacity: 1 !important;
+                        <style>{`
+                          @media (max-width: 768px) {
+                            .p-l70 { padding-left: 10px !important; }
+                            .p-r90 { padding-right: 10px !important; }
+                            .project-new-2 .project-new-content .wt-title {
+                              font-size: 12px !important;
+                              margin-bottom: 4px !important;
                             }
-                        `}</style> */}
+                            .project-new-2 .project-new-content {
+                              padding: 8px 10px 8px 12px !important;
+                              right: 0 !important;
+                            }
+                            .masonry-filter ul {
+                              font-size: 12px;
+                            }
+                            .masonry-filter li a,
+                            .masonry-filter li {
+                              font-size: 12px !important;
+                              padding: 4px 8px !important;
+                            }
+                          }
+                        `}</style>
                         <div className="masonry-wrap row clearfix d-flex justify-content-center flex-wrap">
                             {projectData.map((project, index) => (
-                                <div key={index} className={`masonry-item ${project.filter} col-xl-2 col-lg-3 col-md-6 m-b30 m-l0`} data-filter={project.filter}>
+                                <div key={index} className={`masonry-item ${project.filter} col-xl-2 col-lg-3 col-md-4 col-6 m-b30 m-l0`} data-filter={project.filter}>
                                     <div className="project-new-2">
                                         <div className="wt-img-effect">
                                             <img src={project.image} alt="" />
@@ -548,7 +566,7 @@ export default function Project2() {
 
             </div>
 
-            <Footer />
+            <FooterNew />
         </div >
     </>
   );

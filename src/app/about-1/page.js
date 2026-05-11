@@ -5,6 +5,8 @@ import InnerBanner from '@/components/InnerBanner';
 import ProjectsSection1 from '@/components/home2/ProjectsSection1';
 import ClientLogoSection from '@/components/ClientLogoSection';
 import CounterSection from '@/components/home2/CounterSection';
+import ClientsSlider from '@/components/ClientsSlider';
+import FooterNew from '@/components/FooterNew';
 
 // About page services/capabilities
 const capabilities = [
@@ -274,9 +276,9 @@ export default function About1() {
         </div>
         <CounterSection />
         <ProjectsSection1 />
-        <ClientLogoSection />
+        <ClientsSlider/>
 
-        <Footer />
+        <FooterNew />
       </div>
     </>
   );

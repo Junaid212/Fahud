@@ -611,7 +611,7 @@ const FooterNew = () => {
   
   .footer-faded-text h1 {
     font-size: 100px !important;
-    line-height: 13 !important;
+    line-height: 12.15 !important;
     letter-spacing: -1.5px !important;
     z-index: -10 !important;
   }

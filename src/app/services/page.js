@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InnerBanner from '@/components/InnerBanner';
 import WhatWeDoSection from '@/components/home2/WhatWeDoSection';
+import FooterNew from '@/components/FooterNew';
 
 export default function Services() {
   return (
@@ -318,7 +319,7 @@ export default function Services() {
         
         </div>
         
-        <Footer />
+        <FooterNew />
       </div>
     </>
   );
