@@ -412,23 +412,23 @@ export default function AboutSectionNew() {
           color: rgba(232, 244, 242, 0.5);
         }
 
-        #footer {
-          position: relative;
-          z-index: 10;
-          border-top: 1px solid rgba(255, 255, 255, 0.05);
-          padding: 1.5rem;
-        }
+        // #footer {
+        //   position: relative;
+        //   z-index: 10;
+        //   border-top: 1px solid rgba(255, 255, 255, 0.05);
+        //   padding: 1.5rem;
+        // }
 
         @media (min-width: 1024px) {
-          #footer {
-            padding: 1.5rem 4rem;
-          }
+          // #footer {
+          //   padding: 1.5rem 4rem;
+          // }
         }
 
         @media (min-width: 1280px) {
-          #footer {
-            padding: 1.5rem 6rem;
-          }
+          // #footer {
+          //   padding: 1.5rem 6rem;
+          // }
         }
 
         #statsGrid {

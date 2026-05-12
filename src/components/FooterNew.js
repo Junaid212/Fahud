@@ -11,7 +11,7 @@ import { LuSquareArrowOutUpRight } from "react-icons/lu";
 
 const FooterNew = () => {
   return (
-    <footer id="footer">
+    <section  id="footer">
       
       {/* Background Branding Elements */}
       <div className="footer-circle"></div>
@@ -32,7 +32,7 @@ const FooterNew = () => {
       </div>
 
       {/* Main Content */}
-      <div className="footer-container">
+      <div className="footer-container" id="footer-container">
         
         <div className="footer-grid">
           
@@ -218,12 +218,12 @@ const FooterNew = () => {
 }
 
 /* Main Content Container */
-.footer-container {
+#footer-container {
   position: relative;
   z-index: 10;
   max-width: 99% !important;
   margin: 0 auto;
-  padding: 0 0.1rem;
+  padding: 0 0.51rem;
 }
 
 /* Grid Layout */
@@ -456,7 +456,7 @@ const FooterNew = () => {
 
 @media (min-width: 1024px) {
   .footer-container {
-    padding: 0 2rem;
+    padding: 0 3rem !important;
   }
   
   .footer-grid {
@@ -554,6 +554,12 @@ const FooterNew = () => {
 
 /* --- MOBILE SPECIFIC STYLES (max-width: 786px) --- */
 @media (max-width: 786px) {
+#footer-container {
+    padding: 0 1.5rem;
+  }
+    #footer {
+  // padding-top: 1.5rem !important;
+      }
   .footer-newsletter h2 {
     font-size: 3rem !important;
     margin-bottom: 0.5rem;
@@ -606,7 +612,7 @@ const FooterNew = () => {
 
   /* Make Fahud text and arrow huge but fit proportionally at bottom */
   .footer-faded-text {
-    bottom: 15px !important;
+    // bottom: 15px !important;
   }
   
   .footer-faded-text h1 {
@@ -627,7 +633,7 @@ const FooterNew = () => {
   }
 }
       `}</style>
-    </footer>
+    </section>
   );
 };
 
