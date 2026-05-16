@@ -35,7 +35,7 @@ export default function Header() {
               <div className="logo-header">
                 <div className="logo-header-inner logo-header-one">
                   <Link href="/" onClick={closeMenu}>
-                    <Image src="./images/fd.png" alt="FAHUD Safety & Technical Trading" width={180} height={74} priority />
+                    <Image src="./images/fd.png" alt="FAHUD Safety & Technical Trading" width={180} height={90} priority />
                   </Link>
                 </div>
               </div>
@@ -59,19 +59,19 @@ export default function Header() {
               <div className="nav-animation header-nav justify-content-end">
                 <ul className="nav navbar-nav">
 
-                  <li className="has-child">
+                  <li>
                     <Link href="/" onClick={closeMenu}>Home</Link>
                   </li>
 
-                  <li className="has-child">
+                  <li >
                     <Link href="/about-1" onClick={closeMenu}>About Us</Link>
                   </li>
 
-                  <li className="has-child">
+                  <li >
                     <Link href="/services" onClick={closeMenu}>Services</Link>
                   </li>
 
-                  <li className="has-child">
+                  <li >
                     <Link href="/project-2" onClick={closeMenu}>Products</Link>
                   </li>
 

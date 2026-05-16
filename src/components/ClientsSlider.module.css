@@ -1,7 +1,7 @@
 .sliderSection {
   position: relative;
   background-color: #F9F3EA;
-  padding: 12rem 0 15rem 0; /* Extra padding for rotated content */
+  padding: 12rem 0 10rem 0; /* Extra padding for rotated content */
   overflow: hidden; /* Hide the scaled edges */
   min-height: 50vh;
   display: flex;

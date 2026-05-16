@@ -5,22 +5,25 @@ import Footer from '@/components/Footer';
 import InnerBanner from '@/components/InnerBanner';
 import WhatWeDoSection from '@/components/home2/WhatWeDoSection';
 import FooterNew from '@/components/FooterNew';
+import InnerBanner2 from '@/components/InnerBanner2';
+import ServicesList from '@/components/home2/ServicesList';
 
 export default function Services() {
-  return (
-    <>
-      <div className="page-wraper">
-        <Header />
-        
-        <div className="page-content">
-          <InnerBanner title="Services" />
-          <WhatWeDoSection />
-               
-             
-            {/*  WE PROVIDE SERVICE SECTION START  */}
-            {/* <div className="section-full p-t120 p-b90">
+    return (
+        <>
+            <div className="page-wraper">
+                <Header />
+
+                <div className="page-content">
+                    <InnerBanner2 title="Services" />
+                    {/* <WhatWeDoSection /> */}
+                    <ServicesList/>
+
+
+                    {/*  WE PROVIDE SERVICE SECTION START  */}
+                    {/* <div className="section-full p-t120 p-b90">
                 <div className="container"> */}
-                    
+
                     {/*  TITLE START */}
                     {/* <div className="section-head center wt-small-separator-outer">
                         <div className="wt-small-separator site-text-primary">
@@ -29,13 +32,13 @@ export default function Services() {
                         </div>
                         <h2 className="wt-title title_split_anim">Benefits You Get When Using Our Services</h2>
                     </div> */}
-                    {/*  TITLE END */} 
+                    {/*  TITLE END */}
 
                     {/* <div className="section-content">
                         <div className="service-icon-box-wrap">                 
                             <div className="row justify-content-center d-flex"> */}
-                                {/* Column-1 */}
-                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                    {/* Column-1 */}
+                    {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/1.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -49,8 +52,8 @@ export default function Services() {
                                         
                                     </div>
                                 </div> */}
-                                {/* Column-2 */}
-                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                    {/* Column-2 */}
+                    {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/2.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -64,8 +67,8 @@ export default function Services() {
                                         </div>
                                     </div>
                                 </div> */}
-                                {/* Column-3 */}    
-                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                    {/* Column-3 */}
+                    {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/3.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -78,8 +81,8 @@ export default function Services() {
                                         </div>
                                     </div>
                                 </div> */}
-                                {/* Column-4 */}
-                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                    {/* Column-4 */}
+                    {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/4.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -93,8 +96,8 @@ export default function Services() {
                                         
                                     </div>
                                 </div> */}
-                                {/* Column-5 */}
-                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                    {/* Column-5 */}
+                    {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/5.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -108,8 +111,8 @@ export default function Services() {
                                         </div>
                                     </div>
                                 </div> */}
-                                {/* Column-6 */}    
-                                {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
+                    {/* Column-6 */}
+                    {/* <div className="col-xl-4 col-lg-6 col-md-6 m-b30">
                                     <div className="service-icon-box-two">
                                         <div className="service-media"><img src="images/services/6.jpg" alt="" /></div>
                                         <div className="service-icon-content">
@@ -122,17 +125,17 @@ export default function Services() {
                                         </div>
                                     </div>
                                 </div>  */}
-                            {/* </div>
+                    {/* </div>
                         </div>
                     </div> 
 
                 </div>
                 
             </div>    */}
-            {/*  WE PROVIDE SERVICE SECTION END  */} 
-            
-            {/*  AWARDS SECTION START  */}
-            {/* <div className="section-full twm-achi-section-wrap p-t120 p-b90 " style={{"backgroundImage":"url(images/background/count-bg.jpg)"}}>
+                    {/*  WE PROVIDE SERVICE SECTION END  */}
+
+                    {/*  AWARDS SECTION START  */}
+                    {/* <div className="section-full twm-achi-section-wrap p-t120 p-b90 " style={{"backgroundImage":"url(images/background/count-bg.jpg)"}}>
                 <div className="container">
                     <div className="twm-achi-section-content">
                         <div className="twm-achi-section-title">
@@ -204,10 +207,10 @@ export default function Services() {
                     </div>  
                 </div>
             </div> */}
-            {/* AWARDS SECTION END  */}
+                    {/* AWARDS SECTION END  */}
 
-            {/*  PRICING TABLE SECTION START  */}
-            {/* <div className="section-full p-t120 p-b90">
+                    {/*  PRICING TABLE SECTION START  */}
+                    {/* <div className="section-full p-t120 p-b90">
                 <div className="container">
 
                     
@@ -313,14 +316,14 @@ export default function Services() {
                         
                 </div>
             </div>    */}
-            {/*  PRICING TABLE SECTION END  */}        
+                    {/*  PRICING TABLE SECTION END  */}
 
-     
-        
-        </div>
-        
-        <FooterNew />
-      </div>
-    </>
-  );
+
+
+                </div>
+
+                <FooterNew />
+            </div>
+        </>
+    );
 }

@@ -1,13 +1,37 @@
 "use client";
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InnerBanner from '@/components/InnerBanner';
 import FooterNew from '@/components/FooterNew';
+import InnerBanner3 from '@/components/InnerBanner3';
+
+const filterItems = [
+  { label: 'Fasteners',                   filter: '.cat-1'  },
+  { label: 'Fabrication',                 filter: '.cat-2'  },
+  { label: 'Welding Consumables',         filter: '.cat-3'  },
+  { label: 'Safety Helmets',              filter: '.cat-4'  },
+  { label: 'Safety Eyewear Protection',   filter: '.cat-5'  },
+  { label: 'Safety Respiratory Protection', filter: '.cat-6' },
+  { label: 'Safety Hearing Protection',   filter: '.cat-7'  },
+  { label: 'Lifting Solution',            filter: '.cat-8'  },
+  { label: 'Hand Protection',             filter: '.cat-9'  },
+  { label: 'Foot Protection',             filter: '.cat-10' },
+  { label: 'Body Protection',             filter: '.cat-11' },
+  { label: 'Other Safety',               filter: '.cat-12' },
+  { label: 'Hand Tool',                  filter: '.cat-13' },
+  { label: 'Pipes & Fittings',           filter: '.cat-14' },
+  { label: 'Machine Tool',               filter: '.cat-15' },
+  { label: 'Pneumatic Tool',             filter: '.cat-16' },
+  { label: 'Power Tool',                 filter: '.cat-17' },
+  { label: 'Consumables',               filter: '.cat-18' },
+];
 
 export default function Project2() {
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [activeLabel, setActiveLabel] = useState('All');
   useEffect(() => {
     let timer;
     const initIsotope = () => {
@@ -37,6 +61,9 @@ export default function Project2() {
           $container.isotope({ filter: selector });
           return false;
         });
+
+        // expose isotope instance for mobile dropdown
+        window.__isotopeMasonryInstance = $container;
       } else {
         timer = setTimeout(initIsotope, 100);
       }
@@ -131,7 +158,7 @@ export default function Project2() {
     { filter: "cat-12", image: "images/project-3/96.webp", title:'SCABA/SCBA'  },
     { filter: "cat-12", image: "images/project-3/97.webp", title:'Scaffolding Tag'  },
     { filter: "cat-12", image: "images/project-3/98.webp", title:'Smoke Detector'  },
-    { filter: "cat-12", image: "images/project-3/99 .webp", title:'First Aid Kit'  },
+    { filter: "cat-12", image: "images/project-3/99.webp", title:'First Aid Kit'  },
     { filter: "cat-12", image: "images/project-3/100.webp", title:'Warning Tape'  },
     { filter: "cat-12", image: "images/project-3/101.webp", title:'Shackle'  },
     { filter: "cat-13", image: "images/project-3/102.webp", title:'Screw Drivers & Pliers'  },
@@ -205,7 +232,7 @@ export default function Project2() {
                 <Header />
 
                 <div className="page-content">
-                    <InnerBanner title="Products" />
+                    <InnerBanner3 title="Products" />
 
 
 
@@ -215,63 +242,179 @@ export default function Project2() {
                         <div className="p-l70 p-r90 gap-10">
                             {/*  PAGINATION START  */}
                             <div className="filter-wrap">
-                                <ul className="masonry-filter">
-                                    <li className="active"><a data-filter="*" >All</a></li>
-                                    <li ><a data-filter=".cat-1" >Fasteners</a></li>
-                                    <li><a data-filter=".cat-2" > Fabrication</a></li>
-                                    <li><a data-filter=".cat-3" >Welding Consumables</a></li>
-                                    <li><a data-filter=".cat-4" >Safety Helmets</a></li>
-                                    <li><a data-filter=".cat-5" >Safety Eyewear Protection</a></li>
-                                    <li><a data-filter=".cat-6" >Safety Respiratory Protection</a></li>
-                                    <li><a data-filter=".cat-7" >Safety Hearing Protection</a></li>
-                                <li><a data-filter=".cat-8" >Lifting Solution</a></li>
-                                <li><a data-filter=".cat-9" >Hand Protection</a></li>
-                                <li><a data-filter=".cat-10" >Foot Protection</a></li>
-                                <li><a data-filter=".cat-11" >Body Protection</a></li>
-                                <li><a data-filter=".cat-12" >Other Safety</a></li>
-                                <li><a data-filter=".cat-13" >Hand Tool</a></li>
-                                <li><a data-filter=".cat-14" >Pipes & Fittings</a></li>
-                                <li><a data-filter=".cat-15" >Machine Tool</a></li>
-                                <li><a data-filter=".cat-16" >Pneumatic Tool</a></li>
-                                <li><a data-filter=".cat-17" >Power Tool</a></li>
-                                <li><a data-filter=".cat-18" >Consumables</a></li>
-                            </ul>
-                        </div>
-                        {/*  PAGINATION END  */}
 
-                        {/*  PROJECT CONTENT START  */}
-                        <style>{`
-                          @media (max-width: 768px) {
-                            .p-l70 { padding-left: 10px !important; }
-                            .p-r90 { padding-right: 10px !important; }
-                            .project-new-2 .project-new-content .wt-title {
-                              font-size: 12px !important;
-                              margin-bottom: 4px !important;
-                            }
-                            .project-new-2 .project-new-content {
-                              padding: 8px 10px 8px 12px !important;
-                              right: 0 !important;
-                            }
-                            .masonry-filter ul {
-                              font-size: 12px;
-                            }
-                            .masonry-filter li a,
-                            .masonry-filter li {
-                              font-size: 12px !important;
-                              padding: 4px 8px !important;
-                            }
-                          }
-                        `}</style>
+                              {/* ── DESKTOP filter (hidden on mobile) ── */}
+                              <ul className="masonry-filter filter-desktop">
+                                <li className="active"><a data-filter="*">All</a></li>
+                                {filterItems.map((f) => (
+                                  <li key={f.filter}><a data-filter={f.filter}>{f.label}</a></li>
+                                ))}
+                              </ul>
+
+                              {/* ── MOBILE dropdown filter (hidden on desktop) ── */}
+                              <div className="filter-mobile">
+                                <button
+                                  className="filter-mobile__toggle"
+                                  onClick={() => setMobileDropdownOpen(o => !o)}
+                                  aria-expanded={mobileDropdownOpen}
+                                >
+                                  <span className="filter-mobile__label">{activeLabel}</span>
+                                  <span className={`filter-mobile__arrow ${mobileDropdownOpen ? 'open' : ''}`}>&#9662;</span>
+                                </button>
+
+                                {mobileDropdownOpen && (
+                                  <div className="filter-mobile__dropdown">
+                                    {/* "All" row */}
+                                    <button
+                                      className={`filter-mobile__item${activeLabel === 'All' ? ' active' : ''}`}
+                                      onClick={() => {
+                                        setActiveLabel('All');
+                                        setMobileDropdownOpen(false);
+                                        if (window.__isotopeMasonryInstance) {
+                                          window.__isotopeMasonryInstance.isotope({ filter: '*' });
+                                        }
+                                        // sync desktop list
+                                        if (window.jQuery) {
+                                          window.jQuery('.masonry-filter li').removeClass('active');
+                                          window.jQuery('.masonry-filter li').first().addClass('active');
+                                        }
+                                      }}
+                                    >
+                                      All
+                                    </button>
+
+                                    {filterItems.map((f) => (
+                                      <button
+                                        key={f.filter}
+                                        className={`filter-mobile__item${activeLabel === f.label ? ' active' : ''}`}
+                                        onClick={() => {
+                                          setActiveLabel(f.label);
+                                          setMobileDropdownOpen(false);
+                                          if (window.__isotopeMasonryInstance) {
+                                            window.__isotopeMasonryInstance.isotope({ filter: f.filter });
+                                          }
+                                          // sync desktop list
+                                          if (window.jQuery) {
+                                            window.jQuery('.masonry-filter li').removeClass('active');
+                                            window.jQuery(`.masonry-filter li a[data-filter="${f.filter}"]`).parent().addClass('active');
+                                          }
+                                        }}
+                                      >
+                                        {f.label}
+                                      </button>
+                                    ))}
+                                  </div>
+                                )}
+                              </div>
+
+                            </div>
+                            {/*  PAGINATION END  */}
+
+                            {/*  PROJECT CONTENT START  */}
+                            <style>{`
+                              /* Mobile padding */
+                              @media (max-width: 768px) {
+                                .p-l70 { padding-left: 10px !important; }
+                                .p-r90 { padding-right: 10px !important; }
+                                .project-new-2 .project-new-content .wt-title {
+                                  font-size: 12px !important;
+                                  margin-bottom: 4px !important;
+                                }
+                                .project-new-2 .project-new-content {
+                                  padding: 8px 10px 8px 12px !important;
+                                  right: auto !important;
+                                }
+                              }
+
+                              /* Desktop: show masonry list, hide mobile widget */
+                              .filter-desktop { display: flex; }
+                              .filter-mobile  { display: none; }
+
+                              @media (max-width: 767px) {
+                                .filter-desktop { display: none !important; }
+                                .filter-mobile  { display: block; }
+                              }
+
+                              /* Mobile toggle button */
+                              .filter-mobile__toggle {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                width: 100%;
+                                padding: 10px 16px;
+                                background: #032B4A;
+                                color: #fff;
+                                border: none;
+                                border-radius: 6px;
+                                font-size: 14px;
+                                font-weight: 700;
+                                letter-spacing: 1px;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                              }
+                              .filter-mobile__arrow {
+                                display: inline-block;
+                                transition: transform 0.25s ease;
+                                font-size: 12px;
+                              }
+                              .filter-mobile__arrow.open {
+                                transform: rotate(180deg);
+                              }
+
+                              /* Dropdown panel */
+                              .filter-mobile__dropdown {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                gap: 8px;
+                                margin-top: 8px;
+                                padding: 12px;
+                                background: #fff;
+                                border: 1px solid #e0e0e0;
+                                border-radius: 6px;
+                                box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+                                animation: dropIn 0.2s ease;
+                              }
+                              @keyframes dropIn {
+                                from { opacity: 0; transform: translateY(-6px); }
+                                to   { opacity: 1; transform: translateY(0); }
+                              }
+
+                              /* Each filter chip */
+                              .filter-mobile__item {
+                                padding: 8px 6px;
+                                background: #f5f5f5;
+                                border: 1.5px solid #e0e0e0;
+                                border-radius: 5px;
+                                font-size: 12px;
+                                font-weight: 600;
+                                color: #032B4A;
+                                text-align: center;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                letter-spacing: 0.5px;
+                                transition: background 0.2s, color 0.2s, border-color 0.2s;
+                              }
+                              .filter-mobile__item:hover {
+                                background: #e2791d;
+                                color: #fff;
+                                border-color: #e2791d;
+                              }
+                              .filter-mobile__item.active {
+                                background: #032B4A;
+                                color: #fff;
+                                border-color: #032B4A;
+                              }
+                            `}</style>
                         <div className="masonry-wrap row clearfix d-flex justify-content-center flex-wrap">
                             {projectData.map((project, index) => (
-                                <div key={index} className={`masonry-item ${project.filter} col-xl-2 col-lg-3 col-md-4 col-6 m-b30 m-l0`} data-filter={project.filter}>
+                                <div key={index} className={`masonry-item ${project.filter} col-xl-2 col-lg-3 col-md-4 col-6`} style={{ padding: '5px'}} data-filter={project.filter}>
                                     <div className="project-new-2">
                                         <div className="wt-img-effect">
-                                            <img src={project.image} alt="" />
+                                            <img src={project.image} alt="" style={{ border: '5px solid orange' }} />
                                         </div>
                                         {project.title && (
                                             <div className="project-new-content">
-                                                <h3 className="wt-title"><Link href="project-single.html">{project.title}</Link></h3>
+                                                <h3 className="wt-title"><Link href="#">{project.title}</Link></h3>
                                                 {/* <p>{project.desc}</p> */}
                                             </div>
                                         )}

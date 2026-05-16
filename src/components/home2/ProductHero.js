@@ -425,8 +425,8 @@ export default function ProductHero() {
           top: 50%;
           left: 50%;
           /* GSAP controls: xPercent:-50, yPercent:-50, x offset, scale, filter */
-          width: min(500px, 58vw);
-          height: min(600px, 75vh);
+          width: min(600px, 68vw);
+          height: min(700px, 85vh);
           display: flex;
           align-items: center;
           justify-content: center;

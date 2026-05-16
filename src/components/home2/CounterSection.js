@@ -14,7 +14,7 @@ export default function CounterSection() {
       <div className="container">
         <div className="row">
           {stats.map((stat, i) => (
-            <div key={i} className="col-lg-3 col-md-3 m-b30">
+            <div key={i} className="col-lg-3 col-md-3 col-3 m-b30">
               <div className="counter-outer-one">
                 <span className="counter">{stat.count}</span>
                 <div className="icon-content-info">{stat.label}</div>

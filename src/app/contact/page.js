@@ -12,7 +12,7 @@ export default function Contact() {
                 <Header />
 
                 <div className="page-content">
-                    <InnerBanner title="Contact" />
+                    {/* <InnerBanner title="Contact" /> */}
 
 
 

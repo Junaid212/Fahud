@@ -145,7 +145,7 @@ const FooterNew = () => {
 /* Base Footer Styles */
 #footer {
   position: relative;
-  background-color: #f9f3ea;
+  background-color: #111827;
   color: #111827;
   overflow: hidden;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -165,7 +165,7 @@ const FooterNew = () => {
   transform: translate(-50%, -50%);
   width: 400px;
   height: 400px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #96949457;
   border-radius: 50%;
   pointer-events: none;
   z-index: -10;
@@ -204,7 +204,7 @@ const FooterNew = () => {
   font-size: 350px !important;
   line-height: 2.55;
   font-weight: 900;
-  color: #032B4A;
+  color: #c2c2c2ff;
   opacity: 1;
   // text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -245,7 +245,7 @@ const FooterNew = () => {
 .footer-newsletter h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #032B4A;
+  color: #e8e8e8ff;
   letter-spacing: -0.025em;
   margin: 0;
 }
@@ -301,7 +301,7 @@ const FooterNew = () => {
 }
 
 .footer-description {
-  color: #374151;
+  color: #eeeeeeff;
   font-size: 1rem !important;
   line-height: 1.625;
   max-width: 32rem;
@@ -336,7 +336,7 @@ const FooterNew = () => {
   width: 0.375rem;
   height: 0.375rem;
   border-radius: 50%;
-  background-color: black;
+  background-color: #ffffffff;
   margin-right: 0.75rem;
   margin-top: 0.125rem;
   transition: all 0.3s;
@@ -361,7 +361,7 @@ const FooterNew = () => {
 }
 
 .footer-link-text {
-  color: black;
+  color: #ffffffff;
   font-size: 14px;
   font-weight: 500;
   transition: color 0.2s;
@@ -387,7 +387,7 @@ const FooterNew = () => {
 
 .footer-copyright {
   font-size: 14px;
-  color: #1f2937;
+  color: #8c8c8cff;
   font-weight: 500;
   text-align: center;
 }
@@ -398,7 +398,7 @@ const FooterNew = () => {
 }
 
 .footer-social-link {
-  color: black;
+  color: #ffffffff;
   transition: all 0.2s;
 }
 
@@ -521,7 +521,7 @@ const FooterNew = () => {
   align-items: flex-start;
   gap: 12px;
   margin-bottom: 14px;
-  color: #333;
+  color: #ffffffff;
   font-size: 14px;
 }
 

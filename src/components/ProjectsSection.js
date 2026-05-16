@@ -205,15 +205,14 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter1">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/4.png`} alt="img20" />
-                    {/* <a className="elem pic-long project-view-btn" href="/images/project-3/4.png" title="Commercial Building" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m1.jpg">
-                      <i className="fa fa-search-plus"></i>
-                    </a> */}
+                    <Link href="/project-2">
+                      <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/4.png`} alt="img20" />
+                    </Link>
                   </div>
                   <div className="effect-hvr3-inner">
-                    <h3 className="wt-title"><Link href="/project-single">Fasteners</Link></h3>
+                    <h3 className="wt-title"><Link href="/project-2">Fasteners</Link></h3>
                     {/* <span className="project-new-category">Appartment</span> */}
-                    <Link href="/project-single" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
+                    <Link href="/project-2" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
                   </div>
                 </div>
               </div>
@@ -222,15 +221,14 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter2">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/5.png`} alt="img20" />
-                    {/* <a className="elem pic-long project-view-btn" href="/images/project-3/5.png" title="Mountain Hotel" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m2.jpg">
-                      <i className="fa fa-search-plus"></i>
-                    </a> */}
+                    <Link href="/project-2">
+                      <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/5.png`} alt="img20" />
+                    </Link>
                   </div>
                   <div className="effect-hvr3-inner">
-                    <h3 className="wt-title"><Link href="/project-single">Fabrications</Link></h3>
+                    <h3 className="wt-title"><Link href="/project-2">Fabrications</Link></h3>
                     {/* <span className="project-new-category">Building</span> */}
-                    <Link href="/project-single" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
+                    <Link href="/project-2" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
                   </div>
                 </div>
               </div>
@@ -239,15 +237,14 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter1">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/6.png`} alt="img20" />
-                    {/* <a className="elem pic-long project-view-btn" href="/images/project-3/6.png" title="New York Housing Project" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m3.jpg">
-                      <i className="fa fa-search-plus"></i>
-                    </a> */}
+                    <Link href="/project-2">
+                      <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/6.png`} alt="img20" />
+                    </Link>
                   </div>
                   <div className="effect-hvr3-inner">
-                    <h3 className="wt-title"><Link href="/project-single">Welding Consumables</Link></h3>
+                    <h3 className="wt-title"><Link href="/project-2">Welding Consumables</Link></h3>
                     {/* <span className="project-new-category">Apartment</span> */}
-                    <Link href="/project-single" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
+                    <Link href="/project-2" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
                   </div>
                 </div>
               </div>
@@ -256,15 +253,14 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter2">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/7.png`} alt="img20" />
-                    {/* <a className="elem pic-long project-view-btn" href="/images/project-3/7.png" title="House Extensions" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m4.jpg">
-                      <i className="fa fa-search-plus"></i>
-                    </a> */}
+                    <Link href="/project-2">
+                      <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/7.png`} alt="img20" />
+                    </Link>
                   </div>
                   <div className="effect-hvr3-inner">
-                    <h3 className="wt-title"><Link href="/project-single">Safety PPE's</Link></h3>
+                    <h3 className="wt-title"><Link href="/project-2">Safety PPE's</Link></h3>
                     {/* <span className="project-new-category">Building Constrction</span> */}
-                    <Link href="/project-single" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
+                    <Link href="/project-2" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
                   </div>
                 </div>
               </div>
@@ -273,15 +269,14 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter3">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/8.png`} alt="img20" />
-                    {/* <a className="elem pic-long project-view-btn" href="/images/project-3/8.png" title="Renovation" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m5.jpg">
-                      <i className="fa fa-search-plus"></i>
-                    </a> */}
+                    <Link href="/project-2">
+                      <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/8.png`} alt="img20" />
+                    </Link>
                   </div>
                   <div className="effect-hvr3-inner">
-                    <h3 className="wt-title"><Link href="/project-single">Lifting Solutions</Link></h3>
+                    <h3 className="wt-title"><Link href="/project-2">Lifting Solutions</Link></h3>
                     {/* <span className="project-new-category">Renovation , Architecture</span> */}
-                    <Link href="/project-single" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
+                    <Link href="/project-2" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
                   </div>
                 </div>
               </div>
@@ -290,15 +285,14 @@ export default function ProjectsSection() {
               <div className="swiper-slide" data-filter="filter4">
                 <div className="effect-hvr3">
                   <div className="effect-sarah">
-                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/9.png`} alt="img20" />
-                    {/* <a className="elem pic-long project-view-btn" href="/images/project-3/9.png" title="Roome Interior" data-lcl-txt="" data-lcl-author="" data-lcl-thumb="/images/project-3/m6.jpg">
-                      <i className="fa fa-search-plus"></i>
-                    </a> */}
+                    <Link href="/project-2">
+                      <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/project-3/9.png`} alt="img20" />
+                    </Link>
                   </div>
                   <div className="effect-hvr3-inner">
-                    <h3 className="wt-title"><Link href="/project-single">Safety Solutions</Link></h3>
+                    <h3 className="wt-title"><Link href="/project-2">Safety Solutions</Link></h3>
                     {/* <span className="project-new-category">Interior</span> */}
-                    <Link href="/project-single" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
+                    <Link href="/project-2" className="site-button-icon site-text-primary"><i className="flaticon-right"></i></Link>
                   </div>
                 </div>
               </div>

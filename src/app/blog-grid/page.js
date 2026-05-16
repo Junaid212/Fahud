@@ -95,7 +95,7 @@ export default function BlogGrid() {
                             <div className="col-lg-4 col-md-6 m-b30">
                                 <div className="blog-post blog-post-5-outer">
                                     <div className="wt-post-media">
-                                        <a href="blog-single.html"><img src="images/blog/latest-2/bg4.jpg" alt="" /></a>
+                                        <a href="blog-single.html"><img src="@/assets/images/192.webp" alt="" /></a>
                                     </div>
                                                                          
                                     <div className="wt-post-info">

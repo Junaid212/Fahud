@@ -18,7 +18,7 @@ export default function Benefits() {
           <div className="service-icon-box-wrap">
             <div className="row justify-content-center d-flex">
               {/* Column 1 */}
-              <div className="col-xl-4 col-lg-4 col-md-6 m-b30">
+              <div className="col-4 m-b30">
                 <div className="service-icon-box-two">
                   <div className="service-media">
                     <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/services/10.png`} alt="" />
@@ -36,7 +36,7 @@ export default function Benefits() {
                 </div>
               </div>
               {/* Column 2 */}
-              <div className="col-xl-4 col-lg-4 col-md-6 m-b30">
+              <div className="col-4 m-b30">
                 <div className="service-icon-box-two">
                   <div className="service-media">
                     <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/services/11.png`} alt="" />
@@ -54,7 +54,7 @@ export default function Benefits() {
                 </div>
               </div>
               {/* Column 3 */}
-              <div className="col-xl-4 col-lg-4 col-md-6 m-b30">
+              <div className="col-4 m-b30">
                 <div className="service-icon-box-two">
                   <div className="service-media">
                     <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/services/12.png`} alt="" />

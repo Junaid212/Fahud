@@ -790,10 +790,10 @@ All JavaScript fuctions Start
 				},
 				breakpoints: {
 					0: {
-						slidesPerView: 1,
+						slidesPerView: 2,
 						slidesPerGroup: 1,
 						slidesPerColumn: 1,
-						spaceBetween: 20
+						spaceBetween: 10
 					},
 					575: {
 						slidesPerView: 2,
