@@ -380,12 +380,12 @@ export default function ServicesList() {
           </div>
 
           {/* Floating Counter */}
-          <motion.div className="floating-counter" style={{ opacity }}>
+          {/* <motion.div className="floating-counter" style={{ opacity }}>
             <div className="counter-dot"></div>
             <span className="counter-text">
               {String(activeService + 1).padStart(2, '0')} / {String(services.length).padStart(2, '0')}
             </span>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 
